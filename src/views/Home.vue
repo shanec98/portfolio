@@ -1,14 +1,27 @@
 <template>
   <!-- content above buttons -->
 
-  <div class="relative h-svh w-full">
-    <div class="absolute inset-x-0 bottom-0 flex h-1/2">
-      <section-button class="basis-1/3" section="about" name="About"></section-button>
-      <section-button class="basis-1/3" section="work" name="Work"> </section-button>
-      <section-button class="basis-1/3" section="contact" name="Contact"> </section-button>
+  <div
+    class="relative border-white lg:border-30 sm:border-8 md:border-15 h-lvh w-full bg-gradient-to-b from-white via-beige to-cream"
+  >
+    <div class="absolute inset-x-0 bottom-0 flex h-2/5">
+      <section-button
+        section="about"
+        name="About"
+        bgColor="bg-purple-200"
+        hoverBgColor="bg-blue-200"
+      ></section-button>
+      <section-button section="work" name="Work" bgColor="bg-blue-200" hoverBgColor="bg-purple-200">
+      </section-button>
+      <section-button
+        section="contact"
+        name="Contact"
+        bgColor="bg-purple-200"
+        hoverBgColor="bg-blue-200"
+      >
+      </section-button>
     </div>
   </div>
-  <p>Hello Home</p>
 </template>
 
 <script>
