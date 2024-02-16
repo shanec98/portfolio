@@ -1,16 +1,11 @@
 <template>
   <router-link
     :to="{ name: section }"
-    class="font-serif text-3xl md:text-4xl lg:text-5xl flex basis-1/3 items-center justify-center group [transform:translateZ(0)]"
-    :class="bgColor"
+    class="font-serif text-3xl md:text-4xl lg:text-5xl flex basis-1/3 items-center justify-center"
+    :class="customClass"
   >
-    <span
-      class="absolute h-calc w-calc scale-[0] opacity-0 group-hover:scale-[1] group-hover:opacity-100 transition ease-in-out duration-300"
-      :class="hoverBgColor"
-    >
-    </span
-    >{{ name }}</router-link
-  >
+    {{ name }}
+  </router-link>
 </template>
 
 <script>
@@ -24,8 +19,19 @@ export default {
       type: String,
       required: true
     },
-    hoverBgColor: {},
-    bgColor: {}
+    hoverBgColor: {
+      type: String,
+      required: true
+    },
+    bgColor: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    customClass() {
+      return [this.bgColor, this.hoverBgColor]
+    }
   }
 }
 </script>

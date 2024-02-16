@@ -9,15 +9,20 @@
         section="about"
         name="About"
         bgColor="bg-purple-200"
-        hoverBgColor="bg-blue-200"
+        hoverBgColor="hover:bg-blue-200"
       ></section-button>
-      <section-button section="work" name="Work" bgColor="bg-blue-200" hoverBgColor="bg-purple-200">
+      <section-button
+        section="work"
+        name="Work"
+        bgColor="bg-blue-200"
+        hoverBgColor="hover:bg-purple-200"
+      >
       </section-button>
       <section-button
         section="contact"
         name="Contact"
         bgColor="bg-purple-200"
-        hoverBgColor="bg-blue-200"
+        hoverBgColor="hover:bg-blue-200"
       >
       </section-button>
     </div>
