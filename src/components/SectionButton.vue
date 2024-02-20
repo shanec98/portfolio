@@ -1,7 +1,7 @@
 <template>
   <router-link
     :to="{ name: section }"
-    class="font-serif text-3xl md:text-4xl lg:text-5xl flex basis-1/3 items-center justify-center"
+    class="font-serif text-3xl md:text-4xl lg:text-5xl flex basis-1/3 items-center justify-center hover:text-4xl transition-all ease-in-out duration-300"
     :class="customClass"
   >
     {{ name }}

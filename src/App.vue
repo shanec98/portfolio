@@ -1,10 +1,10 @@
 <template>
   <!-- components associated with these routes will be rendered inside the <router-view> when their routes are activated-->
-  <router-view v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
+  <transition name="fade" mode="out-in" appear>
+    <router-view v-slot="{ Component }">
       <component :is="Component"></component>
-    </transition>
-  </router-view>
+    </router-view>
+  </transition>
 </template>
 
 <script>
@@ -22,6 +22,6 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 </style>
