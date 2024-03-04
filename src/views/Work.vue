@@ -5,7 +5,11 @@
       header="Left Sidebar"
       class="sm:w-[15rem] md:w-[20rem] lg:w-[25rem] bg-grey-100 h-full transition duration-300 ease-in-out"
     >
-      <SideButton section="portfolio" name="Portfolio"></SideButton>
+      <SideButton
+        section="portfolio"
+        name="Portfolio"
+        :image="'/public/assets/img/dog.jpg'"
+      ></SideButton>
     </Sidebar>
 
     <Button @click="visibleLeft = true">button</Button>
