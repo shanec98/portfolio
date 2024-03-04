@@ -5,6 +5,9 @@ const About = () => import('@/views/About.vue')
 const Work = () => import('@/views/Work.vue')
 const Contact = () => import('@/views/Contact.vue')
 
+//links to projects
+const Portfolio = () => import('@/views/projects/Portfolio.vue')
+
 const routes = [
   {
     path: '/',
@@ -25,6 +28,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: Contact
+  },
+  {
+    path: '/work/portfolio',
+    name: 'portfolio',
+    component: Portfolio
   }
 ]
 
