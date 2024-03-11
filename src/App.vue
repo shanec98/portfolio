@@ -15,6 +15,10 @@ export default {
 </script>
 
 <style>
+@import '@/assets/fonts/scribble/stylesheet.css';
+
+@import '@/assets/fonts/popsies/stylesheet.css';
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
