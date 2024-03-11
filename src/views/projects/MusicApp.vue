@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Hello Portfolio World!</p>
+    <p>Hello Music App World</p>
   </div>
 </template>
 
