@@ -19,10 +19,9 @@
         >
       </Sidebar>
 
-      <Button @click="visibleLeft = true">button</Button>
-
-      <component :is="tabs[currentTab]"></component>
+      <Button @click="visibleLeft = true">Projects</Button>
     </div>
+    <component :is="tabs[currentTab]"></component>
   </div>
 </template>
 
