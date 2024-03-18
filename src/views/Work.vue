@@ -1,6 +1,5 @@
 <template>
   <div>
-    <app-header></app-header>
     <div class="card flex justify-center">
       <Sidebar
         v-model:visible="visibleLeft"
@@ -26,7 +25,6 @@
 </template>
 
 <script>
-import AppHeader from '../components/AppHeader.vue'
 import SideButton from '../components/SideButton.vue'
 import Sidebar from 'primevue/sidebar'
 import Button from 'primevue/button'
@@ -38,7 +36,6 @@ import MusicApp from './projects/MusicApp.vue'
 export default {
   name: 'Work',
   components: {
-    AppHeader,
     Sidebar,
     Button,
     SideButton,

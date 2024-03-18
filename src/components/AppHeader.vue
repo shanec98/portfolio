@@ -30,6 +30,13 @@
         <li>
           <router-link
             class="flex items-center px-6 h-full text-black hover:bg-purple-200 transition ease-in-out duration-300"
+            :to="{ name: 'work' }"
+            >Work</router-link
+          >
+        </li>
+        <li>
+          <router-link
+            class="flex items-center px-6 h-full text-black hover:bg-purple-200 transition ease-in-out duration-300"
             :to="{ name: 'contact' }"
             >Contact</router-link
           >

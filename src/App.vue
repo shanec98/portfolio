@@ -1,4 +1,5 @@
 <template>
+  <app-header v-if="!isHome"></app-header>
   <!-- components associated with these routes will be rendered inside the <router-view> when their routes are activated-->
   <transition name="fade" mode="out-in" appear>
     <router-view v-slot="{ Component }">
@@ -8,9 +9,17 @@
 </template>
 
 <script>
+import AppHeader from './components/AppHeader.vue'
 export default {
   name: 'App',
-  components: {}
+  components: {
+    AppHeader
+  },
+  computed: {
+    isHome() {
+      return this.$route.name === 'home'
+    }
+  }
 }
 </script>
 
