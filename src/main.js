@@ -2,6 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { MotionPlugin } from '@vueuse/motion'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -19,6 +20,7 @@ import VeeValidatePlugin from './includes/validation'
 
 const app = createApp(App)
 
+app.use(MotionPlugin)
 app.use(createPinia())
 app.use(PrimeVue)
 app.use(router)
